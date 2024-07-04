@@ -13,86 +13,96 @@
 </head>
 
 <body>
-    <div class='dashboard'>
-        <div class="dashboard-nav">
+    <div class='sidebar'>
+        <div class="sidebar-nav">
             <header>
                 <a href="#!" class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </a>
                 <a href="#" class="brand-logo">
-                    <img src="logo.png"class="logo-img">
+                    <img src="logo.png" class="logo-img">
                 </a>
             </header>
-            <nav class="dashboard-nav-list">
-                <a href="#" class="dashboard-nav-item">
+            <nav class="sidebar-nav-list">
+                <a href="#" class="sidebar-nav-item">
                     <i class="fas fa-home"></i> Home
                 </a>
-                <div class='dashboard-nav-dropdown'>
-                    <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
+                <div class='sidebar-nav-dropdown'>
+                    <a href="#!" class="sidebar-nav-item sidebar-nav-dropdown-toggle">
                         <i class="fas fa-users"></i> Usuarios
                     </a>
-                    <div class='dashboard-nav-dropdown-menu'>
-                        <a href="../../views/admin/admin_estudiantes.html"
-                            class="dashboard-nav-dropdown-item">Alumnos</a>
+                    <div class='sidebar-nav-dropdown-menu'>
+                        <a href="../../views/admin/admin_estudiantes.html" class="sidebar-nav-dropdown-item">Alumnos</a>
                         <a href="../../views/admin/admin_profesores.html"
-                            class="dashboard-nav-dropdown-item">Profesores</a>
+                            class="sidebar-nav-dropdown-item">Profesores</a>
                         <a href="../../views/admin/admin_administradores.html"
-                            class="dashboard-nav-dropdown-item">Administradores</a>
+                            class="sidebar-nav-dropdown-item">Administradores</a>
                     </div>
                 </div>
-                <div class='dashboard-nav-dropdown'>
-                    <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
-                        <i class="fa-solid fa-paste"></i>Formularios
+                <div class='sidebar-nav-dropdown'>
+                    <a href="#!" class="sidebar-nav-item sidebar-nav-dropdown-toggle">
+                        <i class="fa-solid fa-paste"></i> Formularios
                     </a>
-                    <div class='dashboard-nav-dropdown-menu'>
-                        <a href="../../views/admin/admin_roles_ptc.html" class="dashboard-nav-dropdown-item">Roles</a>
+                    <div class='sidebar-nav-dropdown-menu'>
+                        <a href="../../views/admin/admin_roles_ptc.html" class="sidebar-nav-dropdown-item">Roles</a>
                         <a href="../../views/admin/admin_estado_propuestas.html"
-                            class="dashboard-nav-dropdown-item">Estado Propuestas</a>
+                            class="sidebar-nav-dropdown-item">Estado Propuestas</a>
                     </div>
                 </div>
-                <div class='dashboard-nav-dropdown'>
-                    <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
+                <div class='sidebar-nav-dropdown'>
+                    <a href="#!" class="sidebar-nav-item sidebar-nav-dropdown-toggle">
                         <i class="fas fa-money-check-alt"></i> Proyectos PTC
                     </a>
-                    <div class='dashboard-nav-dropdown-menu'>
-                        <a href="../../views/admin/admin_propuestas_insti.html"
-                            class="dashboard-nav-dropdown-item">Crear Proyecto</a>
-                        <a href="../../views/admin/admin_equipos_ptc.html"
-                            class="dashboard-nav-dropdown-item">Equipos</a>
+                    <div class='sidebar-nav-dropdown-menu'>
+                        <a href="../../views/admin/admin_propuestas_insti.html" class="sidebar-nav-dropdown-item">Crear
+                            Proyecto</a>
+                        <a href="../../views/admin/admin_equipos_ptc.html" class="sidebar-nav-dropdown-item">Equipos</a>
                     </div>
                 </div>
-                <div class='dashboard-nav-dropdown'>
-                    <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
-                        <i class="fa-solid fa-graduation-cap"></i>Gestión Cursos
+                <div class='sidebar-nav-dropdown'>
+                    <a href="#!" class="sidebar-nav-item sidebar-nav-dropdown-toggle">
+                        <i class="fa-solid fa-graduation-cap"></i> Gestión Cursos
                     </a>
-                    <div class='dashboard-nav-dropdown-menu'>
-                        <a href="../../views/admin/admin_cursos.html" class="dashboard-nav-dropdown-item">Cursos</a>
-                        <a href="../../views/admin/admin_secciones.html"
-                            class="dashboard-nav-dropdown-item">Secciones</a>
+                    <div class='sidebar-nav-dropdown-menu'>
+                        <a href="../../views/admin/admin_cursos.html" class="sidebar-nav-dropdown-item">Cursos</a>
+                        <a href="../../views/admin/admin_secciones.html" class="sidebar-nav-dropdown-item">Secciones</a>
                         <a href="../../views/admin/admin_especialidad.html"
-                            class="dashboard-nav-dropdown-item">Especialidad</a>
-                        <a href="../../views/admin/admin_grupos.html" class="dashboard-nav-dropdown-item">Grupos</a>
+                            class="sidebar-nav-dropdown-item">Especialidad</a>
+                        <a href="../../views/admin/admin_grupos.html" class="sidebar-nav-dropdown-item">Grupos</a>
                         <a href="../../views/admin/admin_seleccion_niveles.html"
-                            class="dashboard-nav-dropdown-item">Académicos</a>
+                            class="sidebar-nav-dropdown-item">Académicos</a>
                     </div>
                 </div>
-                <a href="#" class="dashboard-nav-item">
+                <a href="#" class="sidebar-nav-item">
                     <i class="fas fa-user"></i> Perfil
                 </a>
                 <div class="nav-item-divider"></div>
-                <a href="#" class="dashboard-nav-item">
+                <a href="#" class="sidebar-nav-item">
                     <i class="fas fa-sign-out-alt"></i> Salir
                 </a>
             </nav>
         </div>
-        <div class='dashboard-app'>
-            <header class='dashboard-toolbar'>
+        <div class='sidebar-content'>
+            <!-- Aquí puedes agregar tu contenido al lado del sidebar -->
+            <header class='sidebar-toolbar'>
                 <a href="#!" class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </a>
             </header>
+            <main class="mt-2">
+
+                <!-- Titulos -->
+                <div id="textos" class="container-fluid mt-5 text-center">
+                    <div class="row justify-content-center">
+                        <h3>Gestión de Estudiantes</h3>
+                    </div>
+                </div>
+            </main>
+        
+        
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="test.js"></script>
 
